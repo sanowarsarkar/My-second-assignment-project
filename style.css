@@ -6,111 +6,171 @@
     box-sizing: border-box;
 }
 
-/* Font styles */
-
-.quicksand {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-}
-
-.raleway {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-}
-
-/* General button styles */
-
+/* Contact Button */
 .all-btn {
     padding: 8px 24px;
     font-weight: 600;
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
+    color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.5s ;
-}
-
-/* Contact Button */
-
-.btn-oan {
     background-color: orange;
-    color: white;
+    transition: 0.5s;
 }
 
-.btn-oan:hover {
-    background-color: #05D4DF;
+/* Button hover */
+.all-btn:hover {
+    background-color: rgba(255, 166, 0, 0.664);
 }
-
-/* Body container */
 
 body {
-    width: 80%;
-    height: auto;
-    margin: auto;
+    background-color: White;
 }
 
-/* Navigation Bar */
-
-nav {
+/* Navbar */
+.navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    justify-content: space-between;
+    padding: 15px 100px;
+    position: relative;
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo img {
     height: 62px;
     width: 62px;
 }
-
 .logo h3 {
     margin-left: 10px;
     font-family: "Quicksand", sans-serif;
     font-size: 32px;
     font-weight: bold;
+    color: black;
 }
 
-ul {
-    display: flex;
-    gap: 32px;
-    align-items: center;
+/* Navigation Links */
+.nav-links {
     list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0 auto; /
 }
 
-/* Different Colors for Each Menu Item */
-
-.nav-link {
+.nav-links a {
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
     font-size: 20px;
+    color: white;
     padding: 8px 12px;
     border-radius: 5px;
 }
-
-/* Active Colors */
-
-.nav-link.home {
-    color: orange;
+/*Menu button not displayed*/
+.mobile-contact-btn {
+    display: none;
 }
 
-.nav-link.about {
-    color: skyblue;
+.nav-link.home { color: orange; }
+.nav-link.about { color: skyblue; }
+.nav-link.facilities { color: #05D4DF; }
+.nav-link.admission { color: #5D58EF; }
+
+.nav-links a:hover {
+    color: #ffcc00;
 }
 
-.nav-link.facilities {
-    color: #05D4DF;
+
+/* Mobile hamburger Menu style */
+#menu-toggle {
+    display: none;
 }
 
-.nav-link.admission {
-    color: #5D58EF;
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+/* Responsive mobile style*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 12px 16px;
+        border-bottom: 2px solid orange;
+    }
+    
+    
+    .logo h3 {
+    display: none;
+}
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* To show the Contact button on mobile */
+    .mobile-contact-btn {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .mobile-contact-btn button {
+        padding: 10px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: orange;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .mobile-contact-btn button:hover {
+        background-color: #ff9900;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Clicking will open the menu and you will also see the Contact button. */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+        margin-top: 22px;
+    }
+
+    #menu-toggle:checked ~ .mobile-contact-btn {
+        display: block;
+    }
+
+    /* Desktop Contact button hidden on mobile */
+    .desktop-contact {
+        display: none;
+    }
+}
