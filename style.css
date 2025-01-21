@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font styles */
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+/* General button styles */
+
+.all-btn {
+    padding: 8px 24px;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+
+/* Contact Button */
+
+.btn-oan {
+    background-color: orange;
+    color: white;
+}
+
+.btn-oan:hover {
+    background-color: #05D4DF;
+}
+
+/* Body container */
+
+body {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 62px;
+    width: 62px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    list-style: none;
+}
+
+/* Different Colors for Each Menu Item */
+
+.nav-link {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Active Colors */
+
+.nav-link.home {
+    color: orange;
+}
+
+.nav-link.about {
+    color: skyblue;
+}
+
+.nav-link.facilities {
+    color: #05D4DF;
+}
+
+.nav-link.admission {
+    color: #5D58EF;
+}
+
