@@ -112,6 +112,7 @@ body {
 
 .hero-peg {
     display: flex;
+    flex-direction: row;
     padding: 15px 100px;
     justify-content: space-between;
 }
@@ -166,7 +167,7 @@ body {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: #333333f5;
         text-align: center;
         padding: 15px 0;
     }
@@ -215,4 +216,32 @@ body {
     .desktop-contact {
         display: none;
     }
+
+    /* hero peg style */
+
+    /* The image will go up. */
+    .hero-peg {
+        padding: 12px 16px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-chil {
+        margin: 32px 1px;
+        font-size: 19px;
+    }
+
+    .hero-peg img {
+        margin: auto;
+        height: 414px;
+        width: 381px;
+    }
+
+    .hero-chil p {
+        padding: 12px 16px;
+        margin: 20px auto;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
 }
