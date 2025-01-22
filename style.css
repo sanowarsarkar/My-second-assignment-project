@@ -147,6 +147,142 @@ body {
     background-color: #333;
 }
 
+/* Standard Curriculum */
+.Curriculum-section {
+    padding: 15px 100px;
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Curriculum-section h2 {
+    display: flex;
+    justify-content: center;
+    /* margin: 28px auto; */
+    margin-top: 28px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+
+.Standard-Curriculum {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 48px 0px;
+}
+
+.all-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+    width: 369px;
+    border-radius: 18px;
+    padding: 40px;
+}
+.kinder-box {
+    background: linear-gradient(to top, #ffffff, #38afe21c);
+    border: 1px solid #DEF5FF;
+}
+
+.elementary-box {
+    background: linear-gradient(to top, #FFFFFF, #FFF4DC);
+    border: 1px solid #FFF4DC;
+}
+
+.middle-box {
+    background: linear-gradient(to top, #FFFFFF, #be99ee67);
+    border: 1px solid #F2E8FF;
+}
+
+.all-h3 {
+    font-family: "Quicksand", sans-serif;
+    color: #202020;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.all-p {
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #808080;
+}
+
+/* Read More style */
+
+.all-a {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.color1-a {
+    color: #64C8FF;
+}
+
+.color2-a {
+    color: #F0AA00;
+}
+
+.color3-a {
+    color: #8700FF;
+}
+
+
+/* Arrow Button  style */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 101px;
+}
+
+/* Button Style */
+.slide-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Arrow Icon */
+.arrow {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: solid white;
+    border-width: 4px 4px 0 0;
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+}
+
+/* Left Arrow */
+.left {
+    transform: rotate(-135deg);
+}
+
+/* Right Arrow */
+.right {
+    transform: rotate(45deg);
+}
+
+
+
 
 /* Responsive mobile style*/
 @media screen and (max-width: 768px) {
