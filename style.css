@@ -77,6 +77,8 @@ body {
     display: none;
 }
 
+/* Navigation Bar Home About Style Color */
+
 .nav-link.home { color: orange; }
 .nav-link.about { color: skyblue; }
 .nav-link.facilities { color: #05D4DF; }
@@ -104,6 +106,46 @@ body {
     background-color: black;
     margin: 5px 0;
 }
+
+
+/* hero peg style */
+
+.hero-peg {
+    display: flex;
+    padding: 15px 100px;
+    justify-content: space-between;
+}
+
+.hero-chil {
+    margin-top: 7rem;
+    font-size: 26px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+/* hero span style */
+.color-orange {
+    color: orange;
+}
+
+.color-skybiue {
+    color: skyblue;
+}
+
+.hero-chil P {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 16px 67px 17px 0px;
+}
+/* hero button style */
+.btn-color {
+    background-color: black;
+}
+
+.btn-color:hover{
+    background-color: #333;
+}
+
 
 /* Responsive mobile style*/
 @media screen and (max-width: 768px) {
