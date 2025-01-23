@@ -393,7 +393,7 @@ body {
 .grid-item img {
     width: 348px;
     height: 145px;
-    border-radius:  20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .grid-btn1 {
@@ -415,8 +415,8 @@ body {
     padding: 0px 22px;
     font-family: "Quicksand", sans-seri;
     position: relative;
-    top: -14px;
-    line-height: 1.5;
+    top: -26px;
+    /* line-height: 1.5; */
 }
 
 .View-All {
@@ -433,7 +433,65 @@ body {
     background-color: rgba(0, 0, 0, 0.623);
 }
 
+/* footer-section */
 
+footer {
+    background-color: #05D4DF;
+}
+
+.footer-con {
+    padding: 40px 109px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    gap: 10px;
+    color: white;
+}
+
+.footer-p p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    margin: 27px 0px;
+}
+
+.h4-2{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+
+.footer-menu, li {
+    list-style: none;
+    margin: 23px 0px;
+}
+
+.footer-menu, li a {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-menu, li a:hover {
+    color: orange;
+}
+
+.footer-img, img {
+    margin-top: 10px;
+}
 
 
 /* Responsive mobile style*/
@@ -614,7 +672,10 @@ body {
         
     }
 
+    .footer-con {
+        flex-direction: column;
+        padding: 37px 18px;
+    }
 }
-
 
 
